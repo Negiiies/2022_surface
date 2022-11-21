@@ -1,0 +1,10 @@
+#include<lapin.h>
+
+t_bunny_position project_paralell(int x, int y, int z )
+{
+    t_bunny_position W;
+
+    W.x = x - (0.5 * y) ;
+    W.y = -z + (0.5 * y) ;
+    return (W);
+}
