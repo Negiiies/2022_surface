@@ -1,15 +1,5 @@
 #include <lapin.h>
-#include <fonction.h>
-float get_ratio(int a, int b, int x);
-
-int get_value(int a, int b, float ratio);
-
-void put_pixel(t_bunny_pixelarray *pxa,
-               t_bunny_position *pos,
-               unsigned int color);
-
-
-
+#include "fonction.h"
 void stu_draw_line(t_bunny_pixelarray *px,
                    t_bunny_position   *pos_a,
                    t_bunny_position   *pos_b,
@@ -22,7 +12,6 @@ void stu_draw_line(t_bunny_pixelarray *px,
     int b;
     int c;
     int d;
-
     a = pos_a->x;
     b = pos_a->y;
     c = pos_b->x;
